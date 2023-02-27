@@ -50,7 +50,7 @@ identdef
 
 integer
    : (DIGIT+)
-   | (DIGIT HEXDIGIT* 'H')
+   | (DIGIT HEXDIGIT* (?i)'H')
    ;
 
 real
@@ -58,7 +58,7 @@ real
    ;
 
 scaleFactor
-   : 'E' ('+' | '-')? DIGIT+
+   : (?i)'E' ('+' | '-')? DIGIT+
    ;
 
 number
@@ -300,140 +300,140 @@ import_
    ;
 
 ARRAY
-   : 'ARRAY'
+   : (?i)'ARRAY'
    ;
 
 OF
-   : 'OF'
+   : (?i)'OF'
    ;
 
 END
-   : 'END'
+   : (?i)'END'
    ;
 
 POINTER
-   : 'POINTER'
+   : (?i)'POINTER'
    ;
 
 TO
-   : 'TO'
+   : (?i)'TO'
    ;
 
 RECORD
-   : 'RECORD'
+   : (?i)'RECORD'
    ;
 
 PROCEDURE
-   : 'PROCEDURE'
+   : (?i)'PROCEDURE'
    ;
 
 IN
-   : 'IN'
+   : (?i)'IN'
    ;
 
 IS
-   : 'IS'
+   : (?i)'IS'
    ;
 
 OR
-   : 'OR'
+   : (?i)'OR'
    ;
 
 DIV
-   : 'DIV'
+   : (?i)'DIV'
    ;
 
 MOD
-   : 'MOD'
+   : (?i)'MOD'
    ;
 
 NIL
-   : 'NIL'
+   : (?i)'NIL'
    ;
 
 TRUE
-   : 'TRUE'
+   : (?i)'TRUE'
    ;
 
 FALSE
-   : 'FALSE'
+   : (?i)'FALSE'
    ;
 
 IF
-   : 'IF'
+   : (?i)'IF'
    ;
 
 THEN
-   : 'THEN'
+   : (?i)'THEN'
    ;
 
 ELSIF
-   : 'ELSIF'
+   : (?i)'ELSIF'
    ;
 
 ELSE
-   : 'ELSE'
+   : (?i)'ELSE'
    ;
 
 CASE
-   : 'CASE'
+   : (?i)'CASE'
    ;
 
 WHILE
-   : 'WHILE'
+   : (?i)'WHILE'
    ;
 
 DO
-   : 'DO'
+   : (?i)'DO'
    ;
 
 REPEAT
-   : 'REPEAT'
+   : (?i)'REPEAT'
    ;
 
 UNTIL
-   : 'UNTIL'
+   : (?i)'UNTIL'
    ;
 
 FOR
-   : 'FOR'
+   : (?i)'FOR'
    ;
 
 BY
-   : 'BY'
+   : (?i)'BY'
    ;
 
 BEGIN
-   : 'BEGIN'
+   : (?i)'BEGIN'
    ;
 
 RETURN
-   : 'RETURN'
+   : (?i)'RETURN'
    ;
 
 CONST
-   : 'CONST'
+   : (?i)'CONST'
    ;
 
 TYPE
-   : 'TYPE'
+   : (?i)'TYPE'
    ;
 
 VAR
-   : 'VAR'
+   : (?i)'VAR'
    ;
 
 MODULE
-   : 'MODULE'
+   : (?i)'MODULE'
    ;
 
 IMPORT
-   : 'IMPORT'
+   : (?i)'IMPORT'
    ;
 
 STRING
    : ('"' .*? '"')
-   | (DIGIT HEXDIGIT* 'X')
+   | (DIGIT HEXDIGIT* (?i)'X')
    ;
 
 HEXDIGIT
